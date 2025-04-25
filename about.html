@@ -12,7 +12,7 @@
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
-<body data-bs-spy="scroll" data-bs-target=".navbar">
+<body data-bs-spy="scroll" data-bs-target=".navbar"></body>
  <header>
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
@@ -23,36 +23,37 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto">
-        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="profile.html">Profile</a>
-        <a class="nav-link" href="product.html">Product</a>
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="index.html" onclick="setActive(this)">Home</a>
+        <a class="nav-link" href="about.html" onclick="setActive(this)">About</a>
+        <a class="nav-link" href="profile.html" onclick="setActive(this)">Profile</a>
+        <a class="nav-link" href="product.html" onclick="setActive(this)">Product</a>
+        <a class="nav-link" href="contact.html" onclick="setActive(this)">Contact</a>
       </div>
     </div>
   </div>
 </nav>
-</header>
 <!--About-->
 <section id="about">
     <div class="container about">
       <div class="row align-items-center justify-content-center">
-        <div class="col-12 intro text-center" >
+        <div class="col-12 intro text-center " >
                 <h6>About Us</h6>
                 <small>Get Ready to Explore Us!</small>
         </div>
         </div>
         </div>
-        <div class="row intro">
-          <div class="col-12 text-center">
-            <h5>ABOUT OUR GARMENTS</h5>
-            <p>MEDLAID FASHION , is a verticaly integrated Knitted Ready made Garment manufacturing company, with in house facilities for fabric Processing
-              1,00,000 Pcs/Month. Our product range consists of Men's wear, Ladieswear, children wear and Kids wear
-              Our major strengths apart from consistency is good quality and on time Delivery. Capacity and Experience in executing Express/Fast
-              orders in a lead time.</p>
+        <div class="container">
+          <div class="intro bg-light">
+            <div class="col-12  text-center">
+              <h5>ABOUT OUR GARMENTS</h5>
+              <p>MEDLAID FASHION , is a verticaly integrated Knitted Ready made Garment manufacturing company, with in house facilities for fabric Processing
+                1,00,000 Pcs/Month. Our product range consists of Men's wear, Ladieswear, children wear and Kids wear
+                Our major strengths apart from consistency is good quality and on time Delivery. Capacity and Experience in executing Express/Fast
+                orders in a lead time.</p>
+            </div>
           </div>
         </div>
-           <div class="container client-img">
+           <div class="container client-img ">
             <div class="row  g-4">
                 <div class="col-12 intro text-center">
                     <h6> OUR CLIENTS</h6>
@@ -121,8 +122,8 @@
            </div>
  <!--OUR TEAM-->          
            <div class="container">
-            <div class="row intro">
-              <div class="col-12 text-center">
+            <div class="intro bg-light">
+              <div class="col-12  text-center">
                 <h5>OUR TEAM</h5>
                 <p>We nurture a young and dynamic team ever
                   eager to accept challenges and act quickly and
@@ -132,38 +133,51 @@
                   forward to the company's growth.</p>
               </div>
             </div>
-           </div>
- <!--MISSION & VISION START-->          
-       <div class="mvv-container1">
-        <div class="mvv-block1">
-          <img src="img/Mission.jpg" alt="">
-        </div>
-        <div class="mvv1">
-          <h2>Our Mission</h2>
-          <p>Enhancing the customer
-            satisfaction by
-            providing
-            quality garments and
-            complying with
-            best service standards.</p>
-        </div>
-      </div>
-      <div class="mvv-container2">
-        <div class="mvv-block2">
-          <img src="img/Vision.jpg" alt="">
-        </div>
-        <div class="mvv2">
-          <h2>Our Vision</h2>
-          <p>Quality' - The Maxim of
-            MEDLAID FASHION To
-            Ensure a strong presence
-            in the global textile
-            market by focusing on
-            quality and exceeding
-            customer expectations.</p>
-        </div>
-      </div>
+          </div>
+           <section class="py-5 ">
+            <div class="container">
+            <div class="col-12 intro text-center text-center mb-5">
+              <h6>Our Mission & Vision</h6>
+              </div>
+          
+              <div class="row g-4">
+          
+                <!-- Mission -->
+                <div class="col-md-6">
+                  <div class="p-4 border rounded shadow-sm h-100 bg-white">
+                    <h4 class="text-success mb-3">🚀 Our Mission</h4>
+                    <p>
+                      Enhancing the customer
+                      satisfaction by
+                      providing
+                      quality garments and
+                      complying with
+                      best service standards.
+                    </p>
+                  </div>
+                </div>
+          
+                <!-- Vision -->
+                <div class="col-md-6">
+                  <div class="p-4 border rounded shadow-sm h-100 bg-white">
+                    <h4 class="text-warning mb-3 ">🌟 Our Vision</h4>
+                    <p>
+                      Quality' - The Maxim of
+                      MEDLAID FASHION To
+                      Ensure a strong presence
+                      in the global textile
+                      market by focusing on
+                      quality and exceeding
+                      customer expectations.
+                    </p>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          </section>
         </section>
+</header>
 <!--BOOTSTRAP-->
 <script src="script/jquery.min.js"></script>
 <script src="script/bootstrap.bundle.min.js"></script>

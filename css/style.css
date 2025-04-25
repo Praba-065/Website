@@ -22,6 +22,7 @@ h6{
     .intro p{
         max-width: 100%;
         margin:auto;
+        padding: 10px;
         font-size: 16px;
         font-weight:500px;
         justify-content: center;
@@ -29,6 +30,7 @@ h6{
     }
     .intro h5{
         margin-top: 45px;
+        padding-top:10px;
         font-weight: bold;
     }
 a{
@@ -55,6 +57,10 @@ section{
 .bg-cover{
     background-position: center !important;
     background-size: cover !important;
+}
+.navbar .navbar-nav .nav-link{
+    font-size:18px;
+    font-weight: 500;
 }
 .navbar .navbar-nav .nav-link:hover, 
 .navbar .navbar-nav .nav-link.active{
@@ -104,13 +110,13 @@ color: #ff4d29;
     background-color: #ff4d29 !important;
 }
 /*INFRASTRUCTURE*/
-.Infra1-img a{
+.anchor-hover a{
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.Infra1-img a:hover{
-    border: 2px solid black;
+.anchor-hover:hover a,
+.anchor-hover:hover a i{
     color:orangered;
     font-weight: bold;
 }
@@ -118,11 +124,15 @@ color: #ff4d29;
     padding: 2px;
     color: black;
     font-weight: bold;
-    border-radius: 50%;
+    border-radius: none;
     margin-right: 10px;
 }
-.icon:hover{
-    color: #ff4d29;
+.factory{
+    margin-top: 15px;
+    margin-bottom: 100px;
+}
+.factory h5{
+ padding: 50px;
 }
 /*HOME END*/
 
@@ -140,7 +150,7 @@ color: #ff4d29;
     text-align: center;
 }
 .client-img{
-    margin-top:50px;
+    margin-top:30px;
     padding:50px;
     justify-content: center;
     max-width:100%;   
@@ -152,28 +162,8 @@ color: #ff4d29;
 #clients{
     background-color:rgb(247, 247, 247);
 }
-.mvv-container1{
-    padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap:5rem;
-}
-.mvv1{
-    flex: 1;
-}
-.mvv-container2{
-    margin-top: 20px;
-    padding: 0 15px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    gap:5rem;
-}
-.mvv2{
-    flex: 1;
+.A-container{
+    margin: 30px;
 }
 /*ABOUT END*/
 
@@ -199,7 +189,7 @@ color: #ff4d29;
     text-align: justify;
 }
 .Infra-bg{
-    background-color: #acacac;
+    background-color: #f0eeee;
     padding: 25px;
 }
 .Infra .col-lg-6{
@@ -223,7 +213,7 @@ padding: 10px;
     background-color:rgb(255, 255, 255);
     text-align: center;
     padding-top:25px;
-    box-shadow: 2px 3px 6px 5px rgb(121, 152, 199);
+    box-shadow: 2px 3px 6px 5px rgb(127, 157, 202);
 }
 .Prod-img{
     margin-top:50px;
@@ -303,36 +293,17 @@ margin: auto;
 }
 /*CONTACT INFO */
 .contact-container{
-    margin: 25px;
+    background-color: #b4b4b4;
+    max-width: 1200px;
+    margin:auto;
 }
-.form-left-side {
-    background-color:#ff4d29;
-}
-.form-left-side h2 {
-    text-align: center;
-}
-.address{
-    margin-top: 50px;
-}
-.phone{
-    margin-top: 25px;
-}
-.Email{
-    margin-top: 25px;
+
+.contact-icon {
+    padding: 20px;
+    color: #f8320a;
 }
 .icon1{
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 50%;
-    margin-right: 10px;
+    padding-right: 8px;
+    color: #f8320a;
 }
-.form-right-side{
-    background-color: #fff;
-}
-.button{
-    background-color: #ff4d29;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-}
+

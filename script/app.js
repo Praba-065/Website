@@ -19,3 +19,14 @@ $('#hero-slider').owlCarousel({
     }
 })
 })
+/*ACTIVE NAVBAR */
+window.addEventListener("DOMContentLoaded", () => {
+    const currentPage = location.pathname.split("/").pop(); // Get current page name
+    const navLinks = document.querySelectorAll(".nav-link");
+  
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });
