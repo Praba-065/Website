@@ -5,34 +5,39 @@ body{
     font-family:"Barlow",sans-serif;
     margin: 0;
     padding: 0;
-    outline:none ;
-    line-height:1.7;
-    color:#516171;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(4, 4, 73, 0.61)),url(/img/Asset\ 5-100.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 h6{
     font-weight: 700 !important;
 }
 .intro{
     margin-bottom: 35px;
-    }
-    .intro h6{
-        color:#ff4d29;
-        font-size:20px;
-    }
-    .intro p{
-        max-width: 100%;
-        margin:auto;
-        padding: 10px;
-        font-size: 16px;
-        font-weight:500px;
-        justify-content: center;
-        color:rgba(136, 136, 136, 0.973);
-    }
+}
+.intro h6{
+    color:white;
+    font-size:20px;
+}
+.intro p{
+    max-width: 100%;
+    margin:auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight:500px;
+    justify-content: center;
+    color:rgba(255, 255, 255, 0.973);
+}
     .intro h5{
-        margin-top: 45px;
-        padding-top:10px;
-        font-weight: bold;
-    }
+    margin-top: 45px;
+    padding-top:10px;
+    font-weight: bold;
+    color: white;
+}
+small{
+    color: white;
+}
 a{
     color: #092032;
     text-decoration: none;
@@ -64,24 +69,26 @@ section{
 }
 .navbar .navbar-nav .nav-link:hover, 
 .navbar .navbar-nav .nav-link.active{
-color: #ff4d29;
+color:rgb(240, 22, 22);
 }
 .navbar{
     margin-top: 40px;
-    box-shadow: 0px 6px 30px rgba(0,0,0,0.10);
-    background-color: rgb(215, 215, 223);
+    background-color:whitesmoke;
 }
 
 /*HOME START*/
 
 .slide1{
-    background-image:url(/img/Slide1.png);
+    background:url(/img/Slide1.png);
+    opacity: 0.7;
 }
 .slide2{
     background-image:url(/img/Slide2.jpg);
+    opacity: 0.7,
 }
 .slide3{
     background-image:url(/img/Slide3.png);
+    opacity: 0.7;
 }
 /*Owl Carousel*/
 .owl-prev,
@@ -110,9 +117,16 @@ color: #ff4d29;
     background-color: #ff4d29 !important;
 }
 /*INFRASTRUCTURE*/
+#Infrastructure p{
+ color: white;
+}
+.border h5{
+    margin-top: 2px;
+    color: white;
+}
 .anchor-hover a{
     text-decoration: none;
-    color: black;
+    color:white;
     font-weight: bold;
 }
 .anchor-hover:hover a,
@@ -122,7 +136,7 @@ color: #ff4d29;
 }
 .icon{
     padding: 2px;
-    color: black;
+    color:white;
     font-weight: bold;
     border-radius: none;
     margin-right: 10px;
@@ -141,10 +155,8 @@ color: #ff4d29;
 .about{
     width:100%;
     height: 100px;
-    background-color:rgb(255, 255, 255);
     text-align: center;
     padding-top:25px;
-    box-shadow: 2px 3px 6px 5px rgb(121, 152, 199);
 }
 .Client{
     text-align: center;
@@ -159,9 +171,7 @@ color: #ff4d29;
     width: unset;
     justify-content: center;
     }
-#clients{
-    background-color:rgb(247, 247, 247);
-}
+
 .A-container{
     margin: 30px;
 }
@@ -171,32 +181,30 @@ color: #ff4d29;
 .profile{
     width:100%;
     height: 100px;
-    background-color:rgb(255, 255, 255);
     text-align: center;
     padding-top:25px;
-    box-shadow: 2px 3px 6px 5px rgb(121, 152, 199);
+    
 }
 .Infra{
     max-width: 1000px;
 }
 .Infra h2{
-    color: #ff4d29;
-    font-weight: bold;
+    color:white;
+    font-weight:bold;
 }
 .Infra p{
-    color:rgb(27, 27, 27);
+    color:white;
     font-weight: 50px;
     text-align: justify;
 }
 .Infra-bg{
-    background-color: #f0eeee;
     padding: 25px;
 }
 .Infra .col-lg-6{
 padding: 25px;
 }
 .prod-pro h2{
-color: #ff4d29;
+color:white;
 text-align: center;
 padding: 10px;
 }
@@ -210,10 +218,8 @@ padding: 10px;
 .prod{
     width:100%;
     height: 100px;
-    background-color:rgb(255, 255, 255);
     text-align: center;
     padding-top:25px;
-    box-shadow: 2px 3px 6px 5px rgb(127, 157, 202);
 }
 .Prod-img{
     margin-top:50px;
@@ -231,7 +237,7 @@ margin: auto;
 }
 .Product img:hover{
     padding:auto;
-    border: 1px solid rgb(104, 104, 104);
+    border: 1px solid black;
     transform: translateY(-5px);
     height: 250px;
     cursor: pointer; 
@@ -263,7 +269,7 @@ margin: auto;
 }  
 .print p{
     font-weight: bold;
-    color: #3d3c3c;
+    color:white;
     font-size: 13px;
     padding: 2px;
 }
@@ -272,10 +278,9 @@ margin: auto;
 .cont{
     width:100%;
     height: 100px;
-    background-color:rgb(255, 255, 255);
     text-align: center;
     padding-top:25px;
-    box-shadow: 2px 3px 6px 5px rgb(121, 152, 199);
+  
 }
 .Iframe-container{
     margin: 10px;
@@ -293,17 +298,21 @@ margin: auto;
 }
 /*CONTACT INFO */
 .contact-container{
-    background-color: #b4b4b4;
     max-width: 1200px;
     margin:auto;
 }
 
 .contact-icon {
     padding: 20px;
-    color: #f8320a;
+    color: white;
 }
 .icon1{
     padding-right: 8px;
-    color: #f8320a;
+    color:white;
 }
-
+.contact-box p{
+    color: white;
+}
+.contact-container h2{
+    color: white;
+}
